@@ -1,0 +1,157 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #14110F;
+}
+
+:root {
+    --background-color: #F2F7F2;
+    --black: #14110F;
+    --hover-color: 
+}
+
+.main-container {
+    position: relative;
+}
+main {
+    position: relative;
+}
+.container {
+    position: relative;
+    padding: 5em;
+    width: 100%;
+    
+    
+}
+
+.menu{
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    font-weight:300;
+    padding: 2em;
+    
+}
+
+.name {
+    animation-name: name;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    color: var(--black);
+    text-decoration: none;
+}
+/*header h1 animation*/
+
+@keyframes name {
+    from {
+        font-style:normal;
+        font-weight:800
+    }
+    to {
+        font-style:italic;
+        font-weight: 800;
+    }
+}
+.name a:hover {
+    color: grey;
+}
+.name a:active {
+    color: black;
+}
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--black);
+    transform: scale(140%);
+    padding: 0 1em 0 0;
+}
+.instagram, .youtube, .vimeo {
+    padding: 0.5em;
+    color: var(--black);
+    
+}
+.instagram:hover, .youtube:hover, .vimeo:hover {
+    padding: 0.5em;
+    color: grey;
+}
+
+.work{
+    font-weight: 300;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto ;
+    gap: 3px;
+    
+    
+}
+.archive {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.folder_txt, .figma_txt, .freecodecamp_txt {
+    display: flex;
+    align-items: center;
+    font-size: 80%;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;   
+}
+
+.container>header h1 {
+    font-size:x-large;
+    font-weight: bold;
+}
+.container header p {
+    font-size:medium;
+    display: flex;
+    justify-content: center;
+}
+figure {
+    padding: 0;
+    margin: 0;
+
+}
+
+
+figure img{
+    width: 100%;
+    height: auto;
+}
+
+figure:hover {
+    scale: 110%;
+}
+
+.figma_img, .freecodecamp_img {
+    scale: 40%;
+    
+}
+
+/*footer*/
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight:300;
+    padding: 2em;
+    list-style: none;
+}
+
+footer ul li{
+    list-style-type: none;
+}
+
+
+/*responsive*/
